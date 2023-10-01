@@ -13,6 +13,8 @@
 		EC3C06492AC79F1B006651FE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC3C06482AC79F1B006651FE /* Preview Assets.xcassets */; };
 		EC9D1CDC2AC910CA00AB26CD /* ScannerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9D1CDB2AC910CA00AB26CD /* ScannerVC.swift */; };
 		EC9D1CDE2AC918B100AB26CD /* ScannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9D1CDD2AC918B100AB26CD /* ScannerView.swift */; };
+		EC9D1CE02AC96EA000AB26CD /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9D1CDF2AC96EA000AB26CD /* Alert.swift */; };
+		EC9D1CE22AC96EF800AB26CD /* BarcodeScannerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9D1CE12AC96EF800AB26CD /* BarcodeScannerViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +25,8 @@
 		EC3C06482AC79F1B006651FE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		EC9D1CDB2AC910CA00AB26CD /* ScannerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerVC.swift; sourceTree = "<group>"; };
 		EC9D1CDD2AC918B100AB26CD /* ScannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerView.swift; sourceTree = "<group>"; };
+		EC9D1CDF2AC96EA000AB26CD /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
+		EC9D1CE12AC96EF800AB26CD /* BarcodeScannerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarcodeScannerViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,10 +60,10 @@
 			isa = PBXGroup;
 			children = (
 				EC3C06412AC79F15006651FE /* BarcodeScannerApp.swift */,
-				EC3C06432AC79F15006651FE /* BarcodeScannerView.swift */,
-				EC9D1CDB2AC910CA00AB26CD /* ScannerVC.swift */,
-				EC9D1CDD2AC918B100AB26CD /* ScannerView.swift */,
 				EC3C06452AC79F1B006651FE /* Assets.xcassets */,
+				EC9D1CE62AC9720400AB26CD /* Views */,
+				EC9D1CE52AC971D800AB26CD /* Screens */,
+				EC9D1CE82AC9724400AB26CD /* Utilities */,
 				EC3C06472AC79F1B006651FE /* Preview Content */,
 			);
 			path = BarcodeScanner;
@@ -71,6 +75,48 @@
 				EC3C06482AC79F1B006651FE /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		EC9D1CE42AC9719A00AB26CD /* BarcodeScanner */ = {
+			isa = PBXGroup;
+			children = (
+				EC3C06432AC79F15006651FE /* BarcodeScannerView.swift */,
+				EC9D1CE12AC96EF800AB26CD /* BarcodeScannerViewModel.swift */,
+			);
+			path = BarcodeScanner;
+			sourceTree = "<group>";
+		};
+		EC9D1CE52AC971D800AB26CD /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				EC9D1CE42AC9719A00AB26CD /* BarcodeScanner */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		EC9D1CE62AC9720400AB26CD /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				EC9D1CE72AC9720C00AB26CD /* UIKit Components */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		EC9D1CE72AC9720C00AB26CD /* UIKit Components */ = {
+			isa = PBXGroup;
+			children = (
+				EC9D1CDD2AC918B100AB26CD /* ScannerView.swift */,
+				EC9D1CDB2AC910CA00AB26CD /* ScannerVC.swift */,
+			);
+			path = "UIKit Components";
+			sourceTree = "<group>";
+		};
+		EC9D1CE82AC9724400AB26CD /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				EC9D1CDF2AC96EA000AB26CD /* Alert.swift */,
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -143,9 +189,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC9D1CE22AC96EF800AB26CD /* BarcodeScannerViewModel.swift in Sources */,
 				EC9D1CDC2AC910CA00AB26CD /* ScannerVC.swift in Sources */,
 				EC9D1CDE2AC918B100AB26CD /* ScannerView.swift in Sources */,
 				EC3C06442AC79F15006651FE /* BarcodeScannerView.swift in Sources */,
+				EC9D1CE02AC96EA000AB26CD /* Alert.swift in Sources */,
 				EC3C06422AC79F15006651FE /* BarcodeScannerApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
